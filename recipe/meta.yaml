@@ -1,8 +1,8 @@
 {% set name = "python-geotiepoints" %}
-{% set version = "1.1.5" %}
+{% set version = "1.1.6" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "194f9c65e2df483a8b8654f3e272fd6ba541e9ec0bd1216967e96deffc6c1d9f" %}
+{% set hash_value = "0eb8dd230ce3051b8d7ab530b156431dfa38ed867eea70cba91cbab20044a38f" %}
 
 package:
   name: '{{ name|lower }}'
