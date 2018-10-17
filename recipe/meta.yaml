@@ -1,34 +1,31 @@
-{% set name = "python-geotiepoints" %}
-{% set version = "1.1.6" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "0eb8dd230ce3051b8d7ab530b156431dfa38ed867eea70cba91cbab20044a38f" %}
+{% set version = "1.1.7" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: python-geotiepoints
+  version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.io/packages/source/p/python-geotiepoints/python-geotiepoints-{{ version }}.tar.gz
+  sha256: ba29e02402e9284e5e7581b34fe9f31ef12a851be926aa5cde046bb5e56f6041
 
 build:
   number: 0
   script:
     - USE_CYTHON=true  # [not win]
     - set USE_CYTHON=true  # [win]
-    - python -m pip install --no-deps --ignore-installed .
+    - "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv"
 
 requirements:
+  build:
+    - {{ compiler('c') }}
   host:
     - python
     - pip
-    - setuptools
     - numpy
     - cython
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy') }}
     - scipy
     - pandas
 
