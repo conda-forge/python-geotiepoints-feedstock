@@ -9,7 +9,7 @@ source:
   sha256: f9b0b541c6e5b1748cde8ddc8f3de1a28fe5aafc270e1ff53f0131ad6571cb11
 
 build:
-  number: 0
+  number: 1
   script:
     - USE_CYTHON=true  # [not win]
     - set USE_CYTHON=true  # [win]
