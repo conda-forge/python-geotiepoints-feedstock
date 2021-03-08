@@ -1,4 +1,4 @@
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
   name: python-geotiepoints
@@ -6,13 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-geotiepoints/python-geotiepoints-{{ version }}.tar.gz
-  sha256: f9b0b541c6e5b1748cde8ddc8f3de1a28fe5aafc270e1ff53f0131ad6571cb11
+  sha256: e37d3be05af0f268e0a8bddd8536af75a10938ec9d427bfe343e7e88ba1b0168
 
 build:
   number: 0
   script:
-    - USE_CYTHON=true  # [not win]
-    - set USE_CYTHON=true  # [win]
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
 requirements:
@@ -34,11 +32,10 @@ test:
     - geotiepoints
   requires:
     - h5py
-    - unittest2
 
 about:
   home: https://github.com/pytroll/python-geotiepoints
-  license: GPL-3.0
+  license: GPL-3.0-or-later
   license_family: GPL3
   license_file: LICENSE.txt
   summary: Interpolation of geographic tiepoints in Python
