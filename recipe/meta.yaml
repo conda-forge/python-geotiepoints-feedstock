@@ -32,7 +32,6 @@ test:
     - geotiepoints
   requires:
     - h5py
-    - unittest2
 
 about:
   home: https://github.com/pytroll/python-geotiepoints
