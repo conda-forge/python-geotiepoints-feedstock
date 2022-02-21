@@ -1,4 +1,4 @@
-{% set version = "1.3.1" %}
+{% set version = "1.4.0" %}
 
 package:
   name: python-geotiepoints
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-geotiepoints/python-geotiepoints-{{ version }}.tar.gz
-  sha256: 929c08bebb7d102fcb42dc42ba7fc015c9871aca6e26c83ca8224211a08680d0
+  sha256: b9de7a9185c4a63711518c093c8416d1e5fe8c3fa37125876e89c9e2226a9006
 
 build:
   number: 0
