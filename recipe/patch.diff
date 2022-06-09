@@ -1,9 +1,11 @@
 diff --git a/pyproject.toml b/pyproject.toml
-index 39deaeb..1956a13 100644
+index a37f62a..bd221bd 100644
 --- a/pyproject.toml
 +++ b/pyproject.toml
-@@ -1,2 +1,2 @@
+@@ -1,5 +1,5 @@
  [build-system]
 -requires = ["setuptools", "wheel", "oldest-supported-numpy", "Cython", "versioneer-518"]
-\ No newline at end of file
 +requires = ["setuptools", "wheel", "numpy", "Cython", "versioneer-518"]
+ build-backend = "setuptools.build_meta"
+
+ [tool.coverage.run]
