@@ -32,7 +32,7 @@ requirements:
     - pip
     - numpy
     - cython
-
+    - versioneer-518
   run:
     - python
     - {{ pin_compatible('numpy') }}
