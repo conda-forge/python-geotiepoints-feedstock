@@ -4,6 +4,6 @@ index 39deaeb..1956a13 100644
 +++ b/pyproject.toml
 @@ -1,2 +1,2 @@
  [build-system]
--requires = ["setuptools", "wheel", "oldest-supported-numpy", "Cython"]
+-requires = ["setuptools", "wheel", "oldest-supported-numpy", "Cython", "versioneer-518"]
 \ No newline at end of file
-+requires = ["setuptools", "wheel", "numpy", "Cython"]
++requires = ["setuptools", "wheel", "numpy", "Cython", "versioneer-518"]
