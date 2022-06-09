@@ -7,13 +7,11 @@ package:
 source:
   url: https://pypi.io/packages/source/p/python-geotiepoints/python-geotiepoints-{{ version }}.tar.gz
   sha256: e7953f7e6235f45bae5a0440fd16d81afb575fd176cbd57243f1790b64d5924e
-  patches:
-    - patch.diff
 
 build:
   number: 0
   script:
-    - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
+    - {{ PYTHON }} -m pip install . --ignore-installed -vvv
 
 requirements:
   build:
