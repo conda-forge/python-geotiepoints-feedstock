@@ -1,11 +1,11 @@
 diff --git a/pyproject.toml b/pyproject.toml
-index a37f62a..bd221bd 100644
---- a/pyproject.toml
-+++ b/pyproject.toml
-@@ -1,5 +1,5 @@
+--- pyproject.toml
++++ pyproject.toml
+@@ -1,6 +1,6 @@
  [build-system]
 -requires = ["setuptools", "wheel", "oldest-supported-numpy", "Cython", "versioneer-518"]
 +requires = ["setuptools", "wheel", "numpy", "Cython", "versioneer-518"]
  build-backend = "setuptools.build_meta"
-
+ 
  [tool.coverage.run]
+ relative_files = true
