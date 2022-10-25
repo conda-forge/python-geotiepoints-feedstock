@@ -1,4 +1,4 @@
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 package:
   name: python-geotiepoints
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/python-geotiepoints/python-geotiepoints-{{ version }}.tar.gz
-  sha256: e7953f7e6235f45bae5a0440fd16d81afb575fd176cbd57243f1790b64d5924e
+  sha256: bd9fe2d75a278c1c270a7e33da9e2886b875f02c0fffa42fcf3b8adec012f1d4
 
 build:
   number: 0
@@ -20,13 +20,12 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
-    - versioneer-518
+    - versioneer
   host:
     - python
     - pip
     - numpy
     - cython
-    - versioneer-518
   run:
     - python
     - {{ pin_compatible('numpy') }}
