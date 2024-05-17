@@ -9,7 +9,7 @@ source:
   sha256: b09865cc125e8ebb0227dd6f8b1613df09ca1385e969360195fa1bd140ed16c0
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310]
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
@@ -21,6 +21,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - versioneer
   host:
     - python
@@ -30,7 +31,6 @@ requirements:
     - versioneer
   run:
     - python
-    - {{ pin_compatible('numpy') }}
     - scipy
     - pandas
 
