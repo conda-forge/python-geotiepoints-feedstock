@@ -5,7 +5,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/python-geotiepoints/python-geotiepoints-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/python_geotiepoints/python_geotiepoints-{{ version }}.tar.gz
   sha256: e41334f04575c25b20ecbc9932b54e18e81d81e9858ba04d137fdfb1b8ab92de
 
 build:
