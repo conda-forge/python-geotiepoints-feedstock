@@ -9,7 +9,7 @@ source:
   sha256: be4f1f7ebdaaac6d5ecfd9452d649e4db59ade471af5734710c4077b0d992617
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<310]
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
@@ -26,6 +26,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - numpy
     - cython
     - versioneer
