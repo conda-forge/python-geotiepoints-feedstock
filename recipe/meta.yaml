@@ -10,7 +10,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [py<310]
+  skip: true  # [py<311]
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
