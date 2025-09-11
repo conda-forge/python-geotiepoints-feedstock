@@ -1,16 +1,16 @@
-{% set version = "1.7.5" %}
+{% set version = "1.8.0" %}
 
 package:
   name: python-geotiepoints
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/python_geotiepoints/python_geotiepoints-{{ version }}.tar.gz
-  sha256: be4f1f7ebdaaac6d5ecfd9452d649e4db59ade471af5734710c4077b0d992617
+  url: https://pypi.org/packages/source/p/python_geotiepoints/python_geotiepoints-{{ version }}.tar.gz
+  sha256: d3c022d0d4fd749df9f05d9cb5d25518851a32712c619bfb2fee4812f2674aaf
 
 build:
-  number: 1
-  skip: true  # [py<310]
+  number: 0
+  skip: true  # [py<311]
   script:
     - {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vvv
 
