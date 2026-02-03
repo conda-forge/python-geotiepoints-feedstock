@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-geotiepo
 
 Home: https://github.com/pytroll/python-geotiepoints
 
-Package license: GPL-3.0-or-later
+Package license: Apache-2.0
 
 Summary: Interpolation of geographic tiepoints in Python
 
